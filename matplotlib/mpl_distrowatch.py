@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 distros_dict = {}
 
 # open the data file
-with open("/home/briancon71/scripting/matplotlib/distrowatch_2021.csv") as weather_file:
+with open("distrowatch_2021.csv") as weather_file:
     _ = weather_file.readline() # column headers on first line of file
     
     for line in weather_file:

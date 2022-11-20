@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 earthquakes = {}
 
 # open the file (deliberately leaving out exception handling)
-with open("/home/briancon71/scripting/matplotlib/earthquakes_2019.csv") as data_file:
+with open("earthquakes_2019.csv") as data_file:
     _ = data_file.readline() # discard the headers
     
     for line in data_file:

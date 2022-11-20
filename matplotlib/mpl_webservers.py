@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 data = {}
 
 # Open data file
-with open("/home/briancon71/scripting/matplotlib/webservers_202211.csv") as data_file:   
+with open("webservers_202211.csv") as data_file:   
     # Read the first line
     _ = data_file.readline()
     
