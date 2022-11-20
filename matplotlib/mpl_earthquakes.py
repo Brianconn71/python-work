@@ -44,9 +44,10 @@ axs[0].set_title("Histogram")
 axs[0].set_xlabel("Magnitude")
 axs[0].set_ylabel("Frequency")
 
+#loop through earthquake items and appaend magnitudes to a list.
 magnitudes = []
-for x, y in earthquakes.items():
-    magnitudes.append(y)
+for date, mag in earthquakes.items():
+    magnitudes.append(mag)
 #bins for histogram
 bins = range(0, int(max(magnitudes)) + 2)
 

@@ -30,4 +30,13 @@ data["Others"] = remaining
 fig, ax = plt.subplots()
 
 # setting title
-ax[0,0].set_title("Pie chart")
+ax.set_title("Web Server Market Share, November 2022")
+
+# creating the pie chart
+ax.pie(data.values(), labels=data.keys(), autopct="%.f%%")
+
+# show figure
+plt.show()
+
+# save figure
+fig.savefig("exercise_2.png")
