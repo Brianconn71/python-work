@@ -2,7 +2,7 @@ import re
 
 def read_errors():
     # open the file for reading
-    with open("/home/bconnolly/python-work/regex/error.log", "r") as log_file:
+    with open("/home/briancon71/scripting/regex/error.log", "r") as log_file:
 
         #read the entire file
         read_logs = log_file.read()
