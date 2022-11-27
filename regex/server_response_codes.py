@@ -4,7 +4,7 @@ import re
 def log_errors():
 
     # open file for reading
-    with open("/home/briancon71/scripting/regex/access.log", "r") as log_files:
+    with open("access.log", "r") as log_files:
         
         #create empty dictionary
         status_codes_dict = {}
@@ -33,11 +33,11 @@ def log_errors():
                 status_codes_dict[code] = status_codes_dict.get(code,0) + 1
     
     # print headers
-    print("Code \t Frequency")
+    print("Code Frequency")
     # loop through codes dictionary
     for status_code in sorted(status_codes_dict):
         # print the code along side number of occurances
-        print(f"{status_code} \t {status_codes_dict[status_code]:>4}")
+        print(f"{status_code:>2} {status_codes_dict[status_code]:>7}")
 
 if __name__ == "__main__":
     log_errors()
